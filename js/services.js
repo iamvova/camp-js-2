@@ -8,10 +8,6 @@ const blocks = document.querySelector('.service-content'),
     planningBtn = document.querySelector('.planning'),
     serviceBtns = document.querySelectorAll('.service-btns button')
 
-
-
-
-
 function renderContent(){
     if(allBtn.classList.contains('service-btns__active')){
         blocks.innerHTML =`${all.map(i=>(`<div class="service-content__block" key=${i.id} style="background: ${i.background}; color: ${i.background === '#CAA892' ? '#fff': '#212121'};">
