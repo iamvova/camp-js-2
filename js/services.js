@@ -1,5 +1,4 @@
-import {all, planning, architecture, design} from '../json/services.js';
-
+import {planning, architecture, design} from '../json/services.js';
 
 const blocks = document.querySelector('.service-content'),
     allBtn = document.querySelector('.all'),
@@ -7,6 +6,12 @@ const blocks = document.querySelector('.service-content'),
     arhitectureBtn = document.querySelector('.arhitecture'),
     planningBtn = document.querySelector('.planning'),
     serviceBtns = document.querySelectorAll('.service-btns button')
+
+const all = [
+    design[design.length-1],
+    architecture[architecture.length-1],
+    planning[planning.length-1]
+]
 
 function renderContent(){
     if(allBtn.classList.contains('service-btns__active')){
@@ -64,6 +69,3 @@ serviceBtns.forEach((btn)=>{
         renderContent()
     })
 })
-
-
-

@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/slider.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Volodymyr Pindak</title>
 </head>
 <body>
-
 <header>
     <div class="header-logo">
         <img src="./assets/logo-navbar.svg" alt="logo">
     </div>
     <ul class="header-menu">
-        <li>Home</li>
-        <li>Project</li>
-        <li>Services</li>
-        <li>About</li>
-        <li>Blog</li>
-        <li>Shop</li>
-        <li>Contacts</li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#!">Project</a></li>
+        <li><a href="#service">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#!">Shop</a></li>
+        <li><a href="#contact">Contacts</a></li>
         <button>Sign Up</button>
     </ul>
     <div class="burger-img">
@@ -32,27 +35,31 @@
             <img src="./assets/menu.png" alt="Close menu">
         </div>
         <ul>
-            <li>Home</li>
-            <li>Project</li>
-            <li>Services</li>
-            <li>About</li>
-            <li>Blog</li>
-            <li>Shop</li>
-            <li>Contacts</li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#!">Project</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#about">About</a></li> 
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#!">Shop</a></li>
+            <li><a href="#contact">Contacts</a></li>
         </ul>
         <button>Sign Up</button>
     </div>
-    
 </header>
+
+<div class="progress-bar-container">
+    <div class="progress-bar"></div>
+</div>
+
 <main>
-    <section class="intro">
+    <section class="intro" id="home">
         <div class="wrapper">
             <div class="intro-container">
                 <div class="intro-content">
-                    <span>MODERN INTERIOR</span>
-                    <h1>Create Your Interior Design.</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-                    <button>Contact</button>
+                    <span data-aos="fade-up" data-aos-once="true">MODERN INTERIOR</span>
+                    <h1 data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">Create Your Interior Design.</h1>
+                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                    <button data-aos="fade-up" data-aos-once="true">Contact</button>
                 </div>
                 <div class="intro-image">
                     <div>
@@ -67,7 +74,7 @@
             <img src="./assets/intro-decore.svg" alt="Decore">
         </div>
     </section>
-    <section class="service">
+    <section class="service" id="service">
         <div class="wrapper">
             <div class="service-container">
                 <span>WHAT WE DO</span>
@@ -85,7 +92,7 @@
             <img src="./assets/services-decore.svg" alt="Decore">
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="wrapper">
             <div class="about-container">
                 <div class="about-img">
@@ -95,16 +102,16 @@
                         <div></div>
                     </div>
                 </div>
-                <div class="about-content">
-                    <span>ABOUT US</span>   
-                    <h2>Interioris The Will of An Epoch Mextreo</h2> 
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form injected humour, or randomised words which don't look even slightly believable.If you are going to use a passage of Lorem Ipsum, sure there isn't anything embarrassing hidden the middleof text. All the Lorem Ipsum generators on the Internettend to repeat predefined chunks as necessary,making this the first true generator on the Internet.</p>
-                    <button>LEARN MORE</button>
+                <div class="about-content" >
+                    <span data-aos="fade-up" data-aos-once="true">ABOUT US</span>   
+                    <h2 data-aos="fade-up" data-aos-once="true">Interioris The Will of An Epoch Mextreo</h2> 
+                    <p data-aos="fade-up" data-aos-once="true">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form injected humour, or randomised words which don't look even slightly believable.If you are going to use a passage of Lorem Ipsum, sure there isn't anything embarrassing hidden the middleof text. All the Lorem Ipsum generators on the Internettend to repeat predefined chunks as necessary,making this the first true generator on the Internet.</p>
+                    <button data-aos="fade-up" data-aos-once="true">LEARN MORE</button>
                 </div>
             </div>
             <div class="about-container">
                 <div class="about-centent__bottom">
-                    <div>
+                    <div data-aos="fade-up" data-aos-once="true">
                         <img src="./assets/about-img-num.svg" alt="20">
                     </div>
                     <h3>Years Of Successful Working The Market</h3>
@@ -121,7 +128,7 @@
         </div>
     </section>
     <section class="stats">
-        <h2>3000+ Completed Work Which WE have Successfully Done</h2>
+        <h2 data-aos="fade-up">3000+ Completed Work Which WE have Successfully Done</h2>
         <div class="wrapper">
             <div class="stats-container">
                 <div class="stat-block">
@@ -158,12 +165,235 @@
             </div>
         </div>
     </section>
+    <section class="slider">
+        <div class="wrapper">
+            <p class="pre-headerh3">TESTIMONIALS</p>
+            <h3 class="headerh3">Client says about us</h3>
+            <div class="swiper mySwiper">
+                <div class="slider-btns__container">
+                    <button class=".slider-container__btns swiper-button-prev"></button>
+                    <button class=".slider-container__btns swiper-button-next"></button>
+                </div>
+                <div class="swiper-wrapper">
+                    <div class="slider-content__block swiper-slide">
+                        <div>
+                            <img src="./assets/slider-img.svg" alt="Person img">
+                        </div>
+                        <h6>Rekha Varadwaz <span>/Manager at Nike inc</span></h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="slider-content__block swiper-slide">
+                        <div>
+                            <img src="./assets/slider-img.svg" alt="Person img">
+                        </div>
+                        <h6>Rekha Varadwaz <span>/Manager at Nike inc</span></h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="slider-content__block swiper-slide">
+                        <div>
+                            <img src="./assets/slider-img.svg" alt="Person img">
+                        </div>
+                        <h6>Rekha Varadwaz <span>/Manager at Nike inc</span></h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="slider-content__block swiper-slide">
+                        <div>
+                            <img src="./assets/slider-img.svg" alt="Person img">
+                        </div>
+                        <h6>Rekha Varadwaz <span>/Manager at Nike inc</span></h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="blog" id="blog">
+        <div class="wrapper">
+            <p class="pre-headerh3">LETEST NEWS</p>
+            <div class="headerh3">From Our Blog</div>
+            <div class="blog-container">
+                <div class="blog-container__block">
+                    <div class="blog__block-img" data-aos="fade-up" data-aos-delay="50">
+                        <div>
+                            <img src="./assets/blog-img.svg" alt="Blog img">
+                            <div></div>
+                        </div>
+                        <h3>2020 Interior Design Trends</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua.</p>
+                        <button>CONTINUE READING....</button>
+                    </div>
+                    <div class="blog__block-img" data-aos="fade-up" data-aos-delay="50">
+                        <div>
+                            <img src="./assets/blog-img.svg" alt="Blog img">
+                            <div></div>
+                        </div>
+                        <h3>2020 Interior Design Trends</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua.</p>
+                        <button>CONTINUE READING....</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="wrapper">
+            <div class="contact-container">
+                <h2>DON’T FORGET TO SIGN UP</h2>
+                <hr>
+                <p>Find out early about all upcoming promotions and new product releases with our newsletter.</p>
+                <form class="contact-form">
+                    <div>
+                        <input type="text" class="contact-form__name" onkeydown="return /[a-z]/i.test(event.key)" placeholder="Name" required>
+                        <input type="text" class="contact-form__lastname" onkeydown="return /[a-z]/i.test(event.key)" placeholder="Surname" required>
+                    </div>
+                    <input type="text" class="contact-form__email" placeholder="E-mail" pattern="^\S+@\S+\.\S+$" title="example@gmail.com" required>
+                    <button type="submit">SUBSCRIBE</button>
+                </form>
+            </div>
+        </div>
+    </section>
 </main>
-    
+
+<footer class="footer">
+    <div class="wrapper">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <div class="footer-container__logo">
+                    <img src="./assets/logo-navbar.svg" alt="Footer Logo">
+                </div>
+                <p>But i must explain to you all this mistaken idea of dencouncing pleasure.</p>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h6>Quick Links</h6>
+                    <ul>
+                        <li><a href="#!">About Our Company</a></li>
+                        <li><a href="#!">Services WE provide</a></li>
+                        <li><a href="#!">Career & Opportunity</a></li>
+                        <li><a href="#!">Privacy & policy</a></li>
+                        <li><a href="#!">Contact US</a></li>
+                    </ul>
+                </div>     
+                <div>
+                    <h6>Company</h6>
+                    <ul>
+                        <li><a href="#!">About Company</a></li>
+                        <li><a href="#!">Our Testimonials</a></li>
+                        <li><a href="#!">Latest News</a></li>
+                        <li><a href="#!">Our misson</a></li>
+                        <li><a href="#!">Get a free Quot</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6>Contact us</h6>
+                    <ul>
+                        <li><a href="#!">Sagrada Familia, Herba</a></li>
+                        <li><a href="#!">Street Front USA</a></li>
+                        <li><a href="#!">brandoxide@gmail.com</a></li>
+                        <li><a href="#!">002-568423591</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-social">
+                <h6>Follow us</h6>
+                <div class="footer-social__container">
+                <div>
+                    <svg width="39" height="38" viewBox="0 0 39 38" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <circle cx="19.5228" cy="18.5831" r="18.5831" fill="#D5D5D5"/>
+                            <rect x="10" y="7" width="19" height="23" fill="url(#pattern0)"/>
+                        <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_0_116" transform="matrix(0.00236431 0 0 0.00195312 -0.105263 0)"/>
+                            </pattern>
+                            <image id="image0_0_116" width="512" height="512" />
+                        </defs>
+                    </svg>
+                </div>
+
+                <div>
+                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <circle cx="18.6939" cy="18.5831" r="18.5831" fill="#D5D5D5"/>
+                            <rect x="8.68762" y="9.14868" width="20.0125" height="20.0125" fill="url(#pattern0)"/>
+                        <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_0_119" transform="scale(0.00195312)"/>
+                            </pattern>
+                            <image id="image0_0_119" width="512" height="512"/>
+                        </defs>
+                    </svg>
+                </div>
+
+                <div>
+                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <circle cx="18.865" cy="18.5831" r="18.5831" fill="#D5D5D5"/>
+                            <path d="M9.43048 14.7207C9.43048 11.9593 11.6691 9.7207 14.4305 9.7207H23.2994C26.0609 9.7207 28.2994 11.9593 28.2994 14.7207V23.5897C28.2994 26.3511 26.0609 28.5896 23.2994 28.5896H14.4305C11.6691 28.5896 9.43048 26.3511 9.43048 23.5896V14.7207Z" fill="url(#pattern0)"/>
+                        <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_0_122" transform="scale(0.00195312)"/>
+                            </pattern>
+                            <image id="image0_0_122" width="512" height="512" />
+                        </defs>
+                    </svg>
+                </div>
+                <div>
+                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <circle cx="18.865" cy="18.5831" r="18.5831" fill="#D5D5D5"/>
+                            <path d="M9.43048 14.7207C9.43048 11.9593 11.6691 9.7207 14.4305 9.7207H23.2994C26.0609 9.7207 28.2994 11.9593 28.2994 14.7207V23.5897C28.2994 26.3511 26.0609 28.5896 23.2994 28.5896H14.4305C11.6691 28.5896 9.43048 26.3511 9.43048 23.5896V14.7207Z" fill="url(#pattern0)"/>
+                        <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_0_122" transform="scale(0.00195312)"/>
+                            </pattern>
+                            <image id="image0_0_122" width="512" height="512" />
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+        <hr class="copyright-hr">
+        <p class="copyright">Copyright @ <script>document.write(new Date().getFullYear())</script> Brandoxide.all right reserved.</p>
+</footer>
+
+<div class="popup-contacts">
+    <div class="popup-contacts__block">
+        <h6 class="name">Hello </h6>
+        <p>You win a discount 120% =) <br> Only today !!!</p>
+        <span class="date"></span>
+        <p class="close">Click and go to shop</p>
+    </div>
+</div>
 
 
 <script src="./js/index.js"></script>
 <script src="./js/services.js" type="module"></script>
+<script src="./js/api.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(document.querySelector('.mySwiper'), {
+        slidesPerView: 2,
+        spaceBetween: 100,
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+        
+        breakpoints: {
+            1200: {
+                slidesPerView: 2, 
+            },
+            480: {
+                centeredSlides:true,
+                slidesPerView: 1,
+                
+            }
+        }
+    })
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init()</script>
 
 </body>
 </html>
